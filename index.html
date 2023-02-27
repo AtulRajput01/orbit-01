@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,23 +5,38 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		.fade-in {
+			animation: fadeIn 1s ease-out;
+			animation-fill-mode: both;
+		}
+	</style>
 </head>
 <body>
 	<header>
 		<div class="header-container">
-			<h1>My Portfolio</h1>
+			<h1><i class="fas fa-code"></i> My Portfolio</h1>
 			<nav>
 				<ul>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+					<li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+					<li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+					<li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<section id="about">
+		<section id="about" class="fade-in">
 			<h2>About Me</h2>
 			<p>My name is Atul Rajput and I am currently a 3rd year computer science and engineering (CSE) student at ABESIT pursuing a Bachelor of Technology (BTech) degree.
 
@@ -32,48 +46,18 @@ Throughout my studies, I have had the opportunity to learn about a wide range of
 
 In addition to my coursework, I have also participated in internships and Contribute in Open-Source, which have allowed me to gain practical experience and apply my skills in a real-world setting. These experiences have been invaluable for developing my professional skills and building my network in the field..</p>
 		</section>
-		<section id="skills">
+		<section id="skills" class="fade-in">
 			<h2>Skills</h2>
 			<ul>
-				<li>Docker</li>
-				<li>Kubernetes</li>
-				<li>CI/CD</li>
-				<li>AWS</li>
-				<li>Java</li>
-				<li>Linux</li>
+				<li><i class="fab fa-docker"></i> Docker</li>
+				<li><i class="fab fa-kubernetes"></i> Kubernetes</li>
+				<li><i class="fas fa-code-branch"></i> CI/CD</li>
+				<li><i class="fab fa-aws"></i> AWS</li>
+				<li><i class="fab fa-java"></i> Java</li>
+				<li><i class="fab fa-linux"></i> Linux</li>
 			</ul>
 		</section>
-		<section id="projects">
+		<section id="projects" class="fade-in">
 			<h2>Projects</h2>
 			<ul>
-				<li><a href="#">Docker-wine</a></li>
-				<li><a href="#">Speech Enchancement System</a></li>
-				<li><a href="#">Zomato Clone</a></li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name">
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea>
-				<input type="submit" value="Send">
-			</form>
-		</section>
-	</main>
-	<footer>
-		<div class="footer-container">
-			<p>Connect with me:</p>
-			<ul>
-				<li><a href="#">https://www.linkedin.com/in/atul-rajput/</a></li>
-				<li><a href="#">https://github.com/AtulRajput01</a></li>
-				<li><a href="#">https://twitter.com/amazing_atul</a></li>
-			</ul>
-		</div>
-	</footer>
-	<script src="script.js"></script>
-</body>
-</html>
+				<li><a href="#"><i class="fas fa-wine-glass-alt"></i> Docker-wine</a
